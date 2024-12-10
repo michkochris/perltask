@@ -5,8 +5,7 @@
 #--------------------------------------------------------------------------------------------------------
 case $(uname -m) in
   x86_64)
-    sed -e '/m64=/s/lib64/lib/' \
-        -i.t-linux64
+    sed -e '/m64=/s/lib64/lib/' -i t-linux64
  ;;
 esac
 # change GCC's default dynamic linker to use the one installed in /ulinux.
