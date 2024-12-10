@@ -21,3 +21,6 @@ for f in "${files[@]}" ; do
     diff $f perl1-$f
     diff $f perl2-$f
 done
+
+# Cleanup
+./copy.sh
